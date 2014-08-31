@@ -12,7 +12,7 @@ import java.util.List;
  * Created by zetsubou_0 on 31.8.14.
  */
 public class JsonUtil {
-    public static JSONObject pointsToJson(List<Point> points) throws JSONException {
+    public static JSONArray pointsToJson(List<Point> points) throws JSONException {
         JSONArray jsonArray = new JSONArray();
         Iterator<Point> i = points.iterator();
         while(i.hasNext()) {
@@ -22,7 +22,8 @@ public class JsonUtil {
             obj.put("y", p.getY());
             jsonArray.put(obj);
         }
-
-        return new JSONObject().put("coordinate", jsonArray);
+        return jsonArray;
     }
+
+
 }

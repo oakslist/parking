@@ -36,13 +36,4 @@ public class JsonTest {
         return test;
     }
 
-    public String getJSON(Transport transport) {
-        String jsonString = "";
-        JSONArray jsonArray = new JSONArray();
-        Route route = transport.getRoute();
-        List<Point> routes = route.getRoutes();
-
-        return jsonString;
-    }
-
 }
