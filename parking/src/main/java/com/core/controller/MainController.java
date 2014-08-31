@@ -21,7 +21,7 @@ public class MainController {
         Iterator<Point> coordinateR = coordinateRight.iterator();
         int stopX = coordinate[0];
         int stopY = coordinate[1];
-        int parkingPlaceLength = parking.getParkingPlaceList().get(0).getLength();
+        int parkingPlaceLength = parking.getParkingPlaceList().get(0).getWidth();
         for (Point point : coordinateLeft) {
             int xL = point.getX();
             int yL = point.getY();
