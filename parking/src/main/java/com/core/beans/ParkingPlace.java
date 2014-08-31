@@ -1,21 +1,15 @@
 package com.core.beans;
-
 /**
  * Created by Viachaslau_Karnausha on 8/31/2014.
  */
 public class ParkingPlace {
     private int width;
     private int height;
-<<<<<<< HEAD
-    private boolean empty = true;
-
-    public boolean isEmpty() {
-        return empty;
-=======
     private int startCoordinateX;
     private int startCoordinateY;
     private int endCoordinateX;
     private int endCoordinateY;
+    private boolean empty;
 
     public ParkingPlace(int startCoordinateX, int startCoordinateY, int endCoordinateX, int endCoordinateY) {
         this.startCoordinateX = startCoordinateX;
@@ -30,7 +24,6 @@ public class ParkingPlace {
     }
 
     public ParkingPlace() {
->>>>>>> cdd8a1cd9c2e477c7e47feec90cedeac977d760d
     }
 
     public int getHeight() {
@@ -49,5 +42,7 @@ public class ParkingPlace {
         this.width = width;
     }
 
-
+    public boolean isEmpty() {
+        return empty;
+    }
 }

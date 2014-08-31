@@ -1,30 +1,18 @@
 package com.core.beans;
-
 import com.core.beans.constant.Data;
 import com.sun.corba.se.impl.orbutil.closure.Constant;
-
 import java.util.ArrayList;
 import java.util.List;
-
 /**
  * Created by Viachaslau_Karnausha on 8/31/2014.
  */
 abstract public class Parking implements Place {
-
     private int startCoordinateX;
     private int startCoordinateY;
-
     private int endCoordinateX;
     private int endCoordinateY;
-
-    private List<ParkingPlace> parkingPlaceList;
-
     private Road road;
-
     public Road getRoad() {
-<<<<<<< HEAD
-
-=======
         List<Point> coordinateLeft = new ArrayList<>();
         List<Point> coordinateRight = new ArrayList<>();
         parkingPlaceList = new ArrayList<>();
@@ -38,51 +26,39 @@ abstract public class Parking implements Place {
             parkingPlaceList.add(new ParkingPlace(i+sizeY,i+sizeY,i,i));
             coordinateRight.add(new Point(i+sizeY,i+sizeY));
         }
->>>>>>> cdd8a1cd9c2e477c7e47feec90cedeac977d760d
-
         return road;
     }
-
+    private List<ParkingPlace> parkingPlaceList;
     public void setRoad(Road road) {
         this.road = road;
     }
-
     public int getStartCoordinateX() {
         return startCoordinateX;
     }
-
     public void setStartCoordinateX(int startCoordinateX) {
         this.startCoordinateX = startCoordinateX;
     }
-
     public int getStartCoordinateY() {
         return startCoordinateY;
     }
-
     public void setStartCoordinateY(int startCoordinateY) {
         this.startCoordinateY = startCoordinateY;
     }
-
     public int getEndCoordinateX() {
         return endCoordinateX;
     }
-
     public void setEndCoordinateX(int endCoordinateX) {
         this.endCoordinateX = endCoordinateX;
     }
-
     public int getEndCoordinateY() {
         return endCoordinateY;
     }
-
     public void setEndCoordinateY(int endCoordinateY) {
         this.endCoordinateY = endCoordinateY;
     }
-
     public List<ParkingPlace> getParkingPlaceList() {
         return parkingPlaceList;
     }
-
     public void setParkingPlaceList(List<ParkingPlace> parkingPlaceList) {
         this.parkingPlaceList = parkingPlaceList;
     }

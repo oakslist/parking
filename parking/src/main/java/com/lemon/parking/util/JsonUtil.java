@@ -35,8 +35,8 @@ public class JsonUtil {
             ParkingPlace parkingPlace = i.next();
             JSONObject parkingPlaceJSON = new JSONObject();
             parkingPlaceJSON.put(WIDTH, parkingPlace.getWidth());
-            parkingPlaceJSON.put(HEIGHT, parkingPlace.getWidth());
-            parkingPlaceJSON.put(IS_EMPTY, parkingPlace.getWidth());
+            parkingPlaceJSON.put(HEIGHT, parkingPlace.getHeight());
+            parkingPlaceJSON.put(IS_EMPTY, parkingPlace.isEmpty());
         }
 
         JSONObject parkingJSON = new JSONObject();
@@ -80,6 +80,4 @@ public class JsonUtil {
         }
         return jsonArray;
     }
-
-
 }
