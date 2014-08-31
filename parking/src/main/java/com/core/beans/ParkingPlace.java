@@ -6,6 +6,11 @@ package com.core.beans;
 public class ParkingPlace {
     private int width;
     private int height;
+    private boolean empty = true;
+
+    public boolean isEmpty() {
+        return empty;
+    }
 
     public int getHeight() {
         return height;

@@ -13,13 +13,15 @@ abstract public class Parking implements Place {
     private int endCoordinateX;
     private int endCoordinateY;
 
+    private List<ParkingPlace> parkingPlaceList;
+
     private Road road;
 
     public Road getRoad() {
+
+
         return road;
     }
-
-    private List<ParkingPlace> parkingPlaceList;
 
     public void setRoad(Road road) {
         this.road = road;
