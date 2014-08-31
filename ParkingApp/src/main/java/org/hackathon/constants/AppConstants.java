@@ -1,7 +1,7 @@
 package org.hackathon.constants;
 
 public class AppConstants {
-	public static final String FILE_NAME = "/Varachai.rdf";
+	public static final String FILE_NAME = "/Varachai.rdf"; 
 	public static final String MAIN_PAGE = "main";
 	public static final String PRODUCT_PAGE = "product";
 	public static final String SEARCH_PRODUCT_PAGE = "searchProduct";
