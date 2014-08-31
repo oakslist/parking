@@ -12,6 +12,9 @@ import com.core.impl.EpamParking;
  */
 public class Runner {
 
+    public static void main(String[] args) {
+        new Runner().run();
+    }
 
     public void run() {
         MainController mainController = new MainController();
@@ -19,7 +22,5 @@ public class Runner {
         Transport car = new Car();
         car.setRoute(mainController.getRoute(place,mainController.getStartCoordinate()));
         car.move();
-
-
     }
 }
