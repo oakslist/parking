@@ -82,4 +82,17 @@ public class JsonUtil {
         }
         return jsonArray;
     }
+
+    public static String getJSON(Parking parking, Transport transport) {
+        JSONObject obj = new JSONObject();
+        try {
+            obj.put(PARKING, parkingJSON(parking));
+            obj.put(ROAD, roadJSON(parking));
+            obj.put(ENTER_CAR, trasportJSON(transport));
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
+        return obj.toString();
+    }
 }
