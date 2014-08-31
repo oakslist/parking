@@ -1,9 +1,11 @@
 package com.test;
 
+import com.core.beans.Point;
 import com.core.beans.Route;
 import com.core.beans.Transport;
 import org.json.JSONArray;
 
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -15,7 +17,8 @@ public class JsonTest {
         String jsonString = "";
         JSONArray jsonArray = new JSONArray();
         Route route = transport.getRoute();
-        Map<Integer, Integer> routes = route.getRoutes();
+        List<Point> routes = route.getRoutes();
+
         return jsonString;
     }
 
