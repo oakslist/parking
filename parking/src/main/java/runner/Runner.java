@@ -1,11 +1,7 @@
 package runner;
 
-import com.core.beans.Parking;
-import com.core.beans.Place;
-import com.core.beans.Transport;
 import com.core.controller.MainController;
-import com.core.impl.Car;
-import com.core.impl.EpamParking;
+import test.JsonTest;
 
 /**
  * Created by Viachaslau_Karnausha on 8/31/2014.
@@ -18,9 +14,10 @@ public class Runner {
 
     public void run() {
         MainController mainController = new MainController();
-        Parking place = new EpamParking();
-        Transport car = new Car();
-        car.setRoute(mainController.getRoute(place,mainController.getStartCoordinate()));
-        car.move();
+//        Parking place = new EpamParking();
+//        Transport car = new Car();
+//        car.setRoute(mainController.getRoute(place,mainController.getStartCoordinate()));
+//        car.move();
+        System.out.println("JSON:\n" + new JsonTest().test());
     }
 }
