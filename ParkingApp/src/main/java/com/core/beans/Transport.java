@@ -5,11 +5,11 @@ import java.util.List;
 /**
  * Created by Viachaslau_Karnausha on 8/31/2014.
  */
-abstract  public class Transport  {
+abstract public class Transport  {
 
     private Route route;
 
-    abstract List<int[][]> move();
+    public abstract List<int[][]> move();
 
     public Route getRoute() {
         return route;
