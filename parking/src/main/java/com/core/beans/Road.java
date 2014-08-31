@@ -6,7 +6,7 @@ import java.util.Map;
 /**
  * Created by Viachaslau_Karnausha on 8/31/2014.
  */
-abstract public class Road {
+public class Road {
 
     private List<Point> left;
     private List<Point> right;

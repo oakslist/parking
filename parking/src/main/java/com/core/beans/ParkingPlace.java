@@ -6,6 +6,25 @@ package com.core.beans;
 public class ParkingPlace {
     private int width;
     private int height;
+    private int startCoordinateX;
+    private int startCoordinateY;
+    private int endCoordinateX;
+    private int endCoordinateY;
+
+    public ParkingPlace(int startCoordinateX, int startCoordinateY, int endCoordinateX, int endCoordinateY) {
+        this.startCoordinateX = startCoordinateX;
+        this.startCoordinateY = startCoordinateY;
+        this.endCoordinateX = endCoordinateX;
+        this.endCoordinateY = endCoordinateY;
+    }
+
+    public ParkingPlace(int width, int height) {
+        this.width = width;
+        this.height = height;
+    }
+
+    public ParkingPlace() {
+    }
 
     public int getHeight() {
         return height;
@@ -22,4 +41,6 @@ public class ParkingPlace {
     public void setWidth(int width) {
         this.width = width;
     }
+
+
 }
