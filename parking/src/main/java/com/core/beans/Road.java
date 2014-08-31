@@ -1,5 +1,6 @@
 package com.core.beans;
 
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -7,23 +8,22 @@ import java.util.Map;
  */
 abstract public class Road {
 
-    private Map<Integer,Integer> coordinateRoadLeft;
-    private Map<Integer,Integer> coordinateRoadRight;
+    private List<Point> left;
+    private List<Point> right;
 
-
-    public Map<Integer, Integer> getCoordinateRoadLeft() {
-        return coordinateRoadLeft;
+    public List<Point> getLeft() {
+        return left;
     }
 
-    public void setCoordinateRoadLeft(Map<Integer, Integer> coordinateRoadLeft) {
-        this.coordinateRoadLeft = coordinateRoadLeft;
+    public void setLeft(List<Point> left) {
+        this.left = left;
     }
 
-    public Map<Integer, Integer> getCoordinateRoadRight() {
-        return coordinateRoadRight;
+    public List<Point> getRight() {
+        return right;
     }
 
-    public void setCoordinateRoadRight(Map<Integer, Integer> coordinateRoadRight) {
-        this.coordinateRoadRight = coordinateRoadRight;
+    public void setRight(List<Point> right) {
+        this.right = right;
     }
 }

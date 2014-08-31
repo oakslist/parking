@@ -5,6 +5,15 @@ import java.util.List;
 /**
  * Created by Viachaslau_Karnausha on 8/31/2014.
  */
-public interface Route {
-    public List<Point> getRoutes();
+public  class Route {
+
+    private List<Point> routeList;
+
+    public List<Point> getRouteList() {
+        return routeList;
+    }
+
+    public void setRouteList(List<Point> routeList) {
+        this.routeList = routeList;
+    }
 }
