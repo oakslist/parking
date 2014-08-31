@@ -1,5 +1,9 @@
 package com.core.beans;
 
+import com.core.beans.constant.Data;
+import com.sun.corba.se.impl.orbutil.closure.Constant;
+
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -18,7 +22,23 @@ abstract public class Parking implements Place {
     private Road road;
 
     public Road getRoad() {
+<<<<<<< HEAD
 
+=======
+        List<Point> coordinateLeft = new ArrayList<>();
+        List<Point> coordinateRight = new ArrayList<>();
+        parkingPlaceList = new ArrayList<>();
+        int sizeY = (startCoordinateY-startCoordinateY)/ Data.PARKING_PLACE_WIDTH;
+        for (int i=0; i < sizeY; i++){
+            parkingPlaceList.add(new ParkingPlace(i,i,i+sizeY,i+sizeY));
+            coordinateLeft.add(new Point(i+sizeY,i+sizeY));
+        }
+        int sizeX = (startCoordinateX - endCoordinateX)/Data.PARKING_PLACE_WIDTH;
+        for (int i=0; i< sizeX; i++){
+            parkingPlaceList.add(new ParkingPlace(i+sizeY,i+sizeY,i,i));
+            coordinateRight.add(new Point(i+sizeY,i+sizeY));
+        }
+>>>>>>> cdd8a1cd9c2e477c7e47feec90cedeac977d760d
 
         return road;
     }

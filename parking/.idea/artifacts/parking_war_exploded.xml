@@ -1,0 +1,24 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="parking:war exploded">
+    <output-path>$PROJECT_DIR$/target/parking</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="parking/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="parking" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: jstl:jstl:1.2" />
+          <element id="library" level="project" name="Maven: org.json:json:20090211" />
+          <element id="library" level="project" name="Maven: javax:javaee-api:7.0" />
+          <element id="library" level="project" name="Maven: com.sun.mail:javax.mail:1.5.0" />
+          <element id="library" level="project" name="Maven: javax.activation:activation:1.1" />
+          <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.7" />
+          <element id="library" level="project" name="Maven: org.slf4j:jcl-over-slf4j:1.7.7" />
+          <element id="library" level="project" name="Maven: org.slf4j:slf4j-log4j12:1.7.7" />
+          <element id="library" level="project" name="Maven: log4j:log4j:1.2.17" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
