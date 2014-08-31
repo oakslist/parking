@@ -5,7 +5,7 @@ import java.util.List;
 /**
  * Created by Viachaslau_Karnausha on 8/31/2014.
  */
-abstract  public class Transport  {
+abstract public class Transport  {
 
     private Route route;
 
