@@ -32,13 +32,13 @@ public class MainController {
                 resultX = xL;
             }
             else {
-                resultX = (xR - xL) / 2;
+                resultX = Math.abs(xR - xL) / 2;
             }
             if (yL == yR){
                 resultY=yL;
             }
             else {
-
+                resultY = Math.abs(yL - yR) / 2;
             }
 
 
