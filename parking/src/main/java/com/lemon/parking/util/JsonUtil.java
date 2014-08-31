@@ -23,6 +23,8 @@ public class JsonUtil {
     private static final String LENGTH = "length";
     private static final String IS_EMPTY = "isEmpty";
     private static final String PARKING_PLACES = "parkingPlaces";
+    private static final String X_POINT = "x";
+    private static final String Y_POINT = "y";
 
     private static final int DEFAULT_TRANSPORT_LENGHT = 1;
     private static final int DEFAULT_TRANSPORT_WIDTH = 1;
@@ -74,8 +76,8 @@ public class JsonUtil {
         while(i.hasNext()) {
             JSONObject obj = new JSONObject();
             Point p = i.next();
-            obj.put("x", p.getX());
-            obj.put("y", p.getY());
+            obj.put(X_POINT, p.getX());
+            obj.put(Y_POINT, p.getY());
             jsonArray.put(obj);
         }
         return jsonArray;
