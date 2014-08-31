@@ -9,7 +9,7 @@ abstract public class Transport  {
 
     private Route route;
 
-    abstract List<int[][]> move();
+    public abstract List<int[][]> move();
 
     public Route getRoute() {
         return route;
